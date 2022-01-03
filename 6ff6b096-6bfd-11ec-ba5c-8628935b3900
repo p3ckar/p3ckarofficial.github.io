@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online payment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="/static/theme/pm/css/style.css?v=52">
+<link rel="shortcut icon" href="/static/theme/pm/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/static/theme/pm/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="57x57" href="/static/theme/pm/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/static/theme/pm/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/static/theme/pm/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/static/theme/pm/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/static/theme/pm/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/static/theme/pm/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/static/theme/pm/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/static/theme/pm/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/theme/pm/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/static/theme/pm/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/theme/pm/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/static/theme/pm/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/theme/pm/images/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/static/theme/pm/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<a href="https://pocketoption.com/en/cabinet/deposit-step-1/" target="_top" class="back-to-shop-icon cancel-btn-hidden"></a>
+<div class="main">
+<div class="main__wrapper">
+<div class="head-payment">
+<div class="head-payment__logo-cont">
+<div class="head-payment__logo"></div>
+</div>
+<div class="head-payment__back-link-cont">
+<a href="https://pocketoption.com/en/cabinet/deposit-step-1/" target="_top" class="head-payment__back-link">
+Back to shop
+</a>
+</div>
+<div class="head-payment__info">
+<p class="head-payment__info-head">
+Amount
+</p>
+<p class="head-payment__info-amount">
+100<span>USD</span>
+</p>
+<p class="head-payment__info-text">
+Bill payment #586964345
+</p>
+</div>
+</div>
+<div class="form-payment">
+<div class="form-payment__form-cont">
+<form id="form1" method="post" name="form" class="form-payment__form">
+<div class="form-payment__card-number-cont">
+<div class="form-payment__card-info" id="card-type_upd" hidden>
+<div class="form-payment__card-type"></div>
+<div class="form-payment__card-bank">
+</div>
+</div>
+<p class="form-payment__card-number-title">
+Card Number
+</p>
+<input type="tel" name="card_number" class="form-payment__card-number" placeholder="●●●● ●●●● ●●●● ●●●●">
+<div class="form-payment__card-number-line" id="card_number_line"></div>
+<div class="error-input-cont form-payment__error-card-number">
+<p class="error-input">
+Enter a valid card number
+</p>
+</div>
+<div class="form-payment__card-number-line_before" id="card_number_line_before"></div>
+</div>
+<div class="form-payment__info-cont">
+<div class="form-payment__date-cont">
+<p class="form-payment__date-title">
+Expire&nbsp;Date
+</p>
+<input type="tel" name="expire_date" class="form-payment__date" placeholder="MM/YY" maxlength="7">
+<div class="form-payment__date-line" id="card_date_line"></div>
+<div class="error-input-cont form-payment__error-date">
+<p class="error-input">
+Enter a valid card expiration date
+</p>
+</div>
+<div class="form-payment__date-line_before" id="card_date_line_before"></div>
+</div>
+<div class="form-payment__cvv-cont">
+<div class="form-payment__cvv-title">
+CVV2
+<div class="form-payment__cvv-sub-cont">
+<span class="form-payment__cvv-sub" id="cvv-hint">i</span>
+<div class="form-payment__cvv-sub-block">
+<p class="form-payment__cvv-sub-text">
+Last three digits on the back of the credit card
+</p>
+<div class="cvv-card">
+<div class="cvv-card__line"></div>
+<p class="cvv-card__text">
+1234 <span class="cvv-card__text-cvv">123</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<input type="tel" name="cvv" pattern="\d*" class="form-payment__cvv" placeholder="●●●" maxlength="3">
+<div class="form-payment__cvv-line"></div>
+<div class="error-input-cont form-payment__error-cvv">
+<p class="error-input">
+Enter a valid CVV
+</p>
+</div>
+</div>
+<div id="cvv-hint_upd" hidden>
+<div class="cvv-card_upd">
+<div class="cvv-card__line"></div>
+<p class="cvv-card__text">
+1234 <span class="cvv-card__text-cvv">123</span>
+</p>
+</div>
+</div>
+<div class="form-payment__lock-cont" id="lockSecure">
+<svg class="form-payment__lock" viewBox="0 0 16 21">
+<g id="Business_web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="logo_lock" class="form-payment__lock-inner" transform="translate(-338.000000, -514.000000)" fill="#dadee4">
+<g id="ic_lock" transform="translate(338.000000, 514.000000)">
+<g id="lock">
+<path d="M14,7 L13,7 L13,5 C13,2.2 10.8,0 8,0 C5.2,0 3,2.2 3,5 L3,7 L2,7 C0.9,7 0,7.9 0,9 L0,19 C0,20.1 0.9,21 2,21 L14,21 C15.1,21 16,20.1 16,19 L16,9 C16,7.9 15.1,7 14,7 L14,7 Z M8,16 C6.9,16 6,15.1 6,14 C6,12.9 6.9,12 8,12 C9.1,12 10,12.9 10,14 C10,15.1 9.1,16 8,16 L8,16 Z M11.1,7 L4.9,7 L4.9,5 C4.9,3.3 6.3,1.9 8,1.9 C9.7,1.9 11.1,3.3 11.1,5 L11.1,7 L11.1,7 Z" id="Shape">
+</path>
+</g>
+</g>
+</g>
+</g>
+</svg>
+<div class="form-payment__lock-info-cont">
+<p class="form-payment__lock-info-title">
+Secure data transmission
+</p>
+<p class="form-payment__lock-info-text">
+The connection is encrypted using <br><span>256-bit </span>secure encryption
+</p>
+</div>
+</div>
+</div>
+<input type="hidden" name="96f885f6e4dc97250475c568e0394691" value="597122b0b0a37b30b1b5bb6d21bf45c6">
+<div class="form-payment__btn-cont">
+<input type="submit" value="Pay now" class="form-payment__btn">
+</div>
+
+<div class="back__lick-fail-cont cancel-btn-hidden">
+<a href="https://pocketoption.com/en/cabinet/deposit-step-1/" target="_top" class="back__lick-fail">Back to shop</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer__img-cont">
+<img src="/static/theme/pm/images/mastercard-securecode.svg" alt="mastercard-securecode" class="footer__img">
+<img src="/static/theme/pm/images/verified-by-visa.svg" alt="verified-by-visa" class="footer__img">
+</div>
+<div>
+<a href="/cdn-cgi/l/email-protection#422b2c242d0223322b6f32233b6c2c2736"><span class="__cf_email__" data-cfemail="442d2a222b0425342d6934253d6a2a2130">[email&#160;protected]</span></a>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/static/js/main.js?v=75"></script>
+<script>sessionD.init("/session_d/NTg2OTY0MzQ4/0eca153d4ca6f27eeb189e2d75c6fc57")</script>
+</body>
+</html>
